@@ -14,7 +14,7 @@ const newsDetails = document.getElementById('newsDetails');
 let newsDataArr = [];
 
 // apis
-const API_KEY = 'fc25e05f7a8a4c56bbd092ac3354ad19';
+const API_KEY = 'f31c177f2442429c92757cfed2a8f3e1';
 const HEADLINES_NEWS = 'https://newsapi.org/v2/top-headlines?country=id&apiKey=';
 const GENERAL_NEWS = 'https://newsapi.org/v2/top-headlines?country=id&category=general&apiKey=';
 const BISNIS_NEWS = 'https://newsapi.org/v2/top-headlines?country=id&category=business&apiKey=';
@@ -105,7 +105,7 @@ const fetchBisnisNews = async () => {
 }
 
 const fetchOlahragaNews = async () => {
-    const response = await fetch('https://newsapi.org/v2/top-headlines?country=id&category=sports&apiKey=fc25e05f7a8a4c56bbd092ac3354ad19');
+    const response = await fetch('https://newsapi.org/v2/top-headlines?country=id&category=sports&apiKey=f31c177f2442429c92757cfed2a8f3e1');
     newsDataArr = [];
     if(response.status >= 200 && response.status < 300) {
         const myJson = await response.json();
