@@ -105,7 +105,7 @@ const fetchBisnisNews = async () => {
 }
 
 const fetchOlahragaNews = async () => {
-    const response = await fetch('https://newsapi.org/v2/top-headlines?country=id&category=sports&apiKey=f31c177f2442429c92757cfed2a8f3e1');
+    const response = await fetch('https://newsapi.org/v2/everything?q=tesla&from=2023-01-07&sortBy=publishedAt&apiKey=f31c177f2442429c92757cfed2a8f3e1');
     newsDataArr = [];
     if(response.status >= 200 && response.status < 300) {
         const myJson = await response.json();
