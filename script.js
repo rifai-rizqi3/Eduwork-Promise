@@ -14,7 +14,7 @@ const newsDetails = document.getElementById('newsDetails');
 let newsDataArr = [];
 
 // apis
-const proxyUrl = "https://cors-proxy.htmldriven.com/?url=https://promise.iihao.id/"
+const reqOptions = { 'mode': 'cors', headers: { 'Access-Control-Allow-Origin': '*' } };
 const API_KEY = 'f31c177f2442429c92757cfed2a8f3e1';
 const HEADLINES_NEWS = 'https://newsapi.org/v2/top-headlines?country=id&apiKey=';
 const GENERAL_NEWS = 'https://newsapi.org/v2/top-headlines?country=id&category=general&apiKey=';
